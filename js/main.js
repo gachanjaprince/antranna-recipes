@@ -163,15 +163,4 @@ document.querySelector('.recipe3').addEventListener('click', function() {getReci
 document.querySelector('.recipe4').addEventListener('click', function() {getRecipe(entry, Number(document.querySelector('.recipe4').id))})
 document.querySelector('.recipe5').addEventListener('click', function() {getRecipe(entry, Number(document.querySelector('.recipe5').id))})
 
-/*
-function clearPreviousResults () {
-    const ingredientList = document.querySelector('#recipeIngredients')
-    while (ingredientList.hasChildNodes()) {
-      ingredientList.removeChild(ingredientList.firstChild);
-    }
-    const stepsList = document.querySelector('#recipeSteps')
-    while (stepsList.hasChildNodes()) {
-      stepsList.removeChild(stepsList.firstChild)
-    }
-}
-*/
+
