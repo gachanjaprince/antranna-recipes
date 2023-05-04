@@ -1,0 +1,378 @@
+/* BOX MODEL HACK */
+* {
+    box-sizing:border-box;
+}
+
+/* Clear Fix Hack */
+.clearfix:after {
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear:both;
+}
+
+/******************************* SLIDE SHOW *******************************/
+.slideContainer {
+    max-width: 1300px;
+    position: relative;
+}
+
+.slideImage {
+    width: 100%;
+    height: auto;
+    padding: 0px 0.5%;
+}
+
+.mySlides {
+    display: none;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:rgba(47, 1, 77);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.35s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    transform: scale(2);
+    transition-duration: 0.35s;
+}
+
+.text {
+    padding: 8px 0px 2.5px 5px;
+    position: absolute;
+    bottom: 5px;
+    width: 99%;
+    margin: auto 0.5%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 152, 78, 0.337);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.25s;
+}
+
+@keyframes fade {
+    from {opacity: 0.25;}
+    to {opacity: 1;}
+}
+
+
+/*************************************** LAYOUT ******************************/
+header, footer, main {
+    width: 100%;
+    padding: 1.5% 0.75%;
+}
+header {
+    height: 145px;
+}
+section {
+    width: 97.5%;
+    margin: auto 1.25% 3.0% 1.25%;
+    padding: 1.5% 0.75%;
+}
+    .explore {
+        margin-bottom: 0;
+    }
+    .noResults {
+        min-height: 75px
+    }
+        .noResults p {
+            font-size: 1.05rem;
+        }
+    .results, .noResults {
+        display: none; 
+       }    
+.flexor {
+    display: flex;
+    justify-content: space-around;
+}
+.quarter {
+    flex-basis: 25%;
+    padding: 0.25% 0.50%;
+}
+.third {
+    flex-basis: 33%;
+    padding: 0.25% 0.50%;
+}
+.twoThirds {
+    flex-basis: 66%;
+    padding: 0.15% 1.75%;
+}
+.threeQuarters {
+    flex-basis: 75%;
+    padding: 0.25% 0.50%;
+}
+span {
+    display: block;
+    padding: 0.15rem 0;
+}
+img {
+    width: 100%;
+    padding: 0.5% 1.25%;
+}
+.mainRecipe {
+    margin-bottom: 10px;
+}
+.mainRecipe ol {
+    padding-left: 0.75rem;
+}
+#recipeIngredients {
+    padding-left:0;
+    margin-top: 0.25rem;
+}
+.mainRecipe h4 {
+    padding-left: 0px;
+    margin-bottom: 0.25rem;
+}
+.mainRecipe h2 {
+    padding-left: 0.5%;
+}
+ol {
+    padding-left: 0px;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    margin: 1.75%;
+    list-style: decimal outside;
+}
+    #recipeIngredients li {
+        display: inline-block;
+        padding: 0.75%;
+        margin: 0.25%;
+    }
+    footer li {
+        list-style-type: none;
+        text-align: center;
+        margin: 0.75rem;
+    }
+.mainSearch {
+    flex-basis: 95%;
+}
+.searchButton {
+    flex-basis: 5%;
+    padding: .25%;
+}
+.explore img {
+    padding: 15%;
+}
+.logo {
+    padding: 7.5%;
+}
+header .logo {
+    height: 115px;
+    width: auto;
+}
+.news > div {
+    padding: 1.25% 0;
+}
+.featured h4 {
+    margin-bottom: 0.85rem;
+}
+.socials {
+    padding: 5%;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+    footer h3 {
+         margin-bottom: 0;
+    }
+.relPos {
+    position: relative;
+}
+.absBottom {
+    position: absolute;
+    bottom: 1.75%;
+}
+.absTop {
+    position: absolute;
+    top: 2.5%;
+    margin-bottom: 2.5px;
+}
+
+/***************************** STYLE *******************************/
+
+.mainSearch {
+    border: none;
+}
+.bordered {
+    border-bottom: 0.25px solid rgba(48, 0, 126, 0.451);
+}
+header {
+    background-color: rgba(119, 107, 227, 0.514);
+}
+footer {
+    background-color: rgba(47, 1, 77, 0.766);
+}
+a {
+    text-decoration:none;
+}
+.central {
+    text-align: center;
+}
+.searchButton {
+    border: none;
+    background: none;
+}
+.zoom:hover {
+    transform: scale(1.10);
+    transition-duration: 0.175s
+}
+.slideContainer .zoom:hover {
+    object-fit: contain;
+    transform: scale(1.025);
+    transition-duration: 0.185s;
+}
+#recipeIngredients li:before {
+    content:'• ';
+    font-size: 0.75rem;
+}
+.news a:hover {
+    text-decoration: underline 1px;
+    transform: scale(1.025);
+    transition-duration: 0.25s;
+}
+
+/************************* TYPOGRAPHY ***************************************/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+header {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(54, 0, 140);
+}
+.text a {
+    text-decoration: none;
+}
+.text h3 {
+    font-size: 1.75rem;
+    margin: 0.55rem auto;
+}
+.text span, .text h3 {
+    color:rgb(47, 1, 77);
+}
+.orangeRed {
+    color: rgb(255, 89, 0);
+}
+span { 
+    font-weight: bold;
+}
+.news span {
+    color: black;
+}
+.news h5 {
+    font-size: 1.05rem;
+    margin: 7.5px auto;
+}
+footer a{
+    color: black;
+    font-size: 1rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer h3 {
+    color: black;
+}
+.newsletter {
+    flex-basis: 40%;
+}
+    .newsletter div {
+        margin: 10px auto;
+    }
+footer .btn {
+    background-color: orangered;
+    border: 2px orangered;
+    color: rgba(47, 1, 77, 0.766);
+    font-weight: bold;
+}
+
+
+/**************** MEDIA QUERIES *******************************/
+
+@media all and (max-width:650px) {
+    footer {
+        display: block;
+    }
+    .socials {
+        padding:5% 27.5%;
+    }
+    .newsletter {
+        text-align: center;
+    }
+    .flexor-MINI {
+        display: block;
+    }
+    .featured h2 {
+        margin-bottom: 0px;
+    }
+    .news .third {
+        display: none;
+    }
+    .news .twoThirds {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+    .news span {
+        font-size: 0.90rem;
+    }
+    .absBottom, .absTop {
+        position: relative;
+        margin: 12.5% auto;
+    }
+    div .absBottom {
+        margin-bottom: 0;
+    }
+    .mainRecipe img {
+        padding: 2.5%;
+    }
+    .extraRecipe > div {
+        flex-basis: 40%;
+    }
+    .hiddenRecipe {
+        display: none
+    }
+}
+@media all and (max-width:975px) {
+    .delicious, .spotlightAnchor {
+        display: none;
+    }
+    .extraRecipe span {
+        font-size: 0.75rem;
+    }
+}
+
+@media all and (min-width:1000px) {
+    main, footer {
+        width: 1100px;
+        margin: auto;
+    }
+}

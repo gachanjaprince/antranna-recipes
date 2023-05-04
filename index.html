@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Antranna Recipes</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="flexor bordered" id="topBlock">
+			<div class="quarter">
+				<a class="clearfix" href="index.html"><img class="logo" src="images/antrannaNoBG.png" alt="The Main Logo"></a>
+			</div>
+		</header>
+		<main class="bordered">
+			<section class="clearfix flexor">
+				<input class="mainSearch bordered" type="text" placeholder="Search by Main Ingredient">
+				<button id="recipeSearch" class="searchButton zoom" type="button">
+					<img src="images/search.png" alt="Search Button (Magnifying glass)">
+				</button>
+			</section>
+			<section class="noResults">
+				<!--THIS IS WHERE OUR ERROR MESSAGE WILL BE INSERTED-->
+			   </section>
+			<section class="explore bordered" id="exploreBlock">
+				<h2>Explore</h2>
+				<div class="flexor">
+					<div class="quarter central">
+						<img class="zoom" id="tofu" src="images/tofu.png" alt="A pictogram of tofu">
+						<h5 class="orangeRed">Tofu</h5>
+					</div>
+					<div class="quarter central">
+						<img class="zoom" id="quinoa" src="images/quinoa.png" alt="A pictogram of quinoa">
+						<h5 class="orangeRed">Quinoa</h5>
+					</div>
+					<div class="quarter central">
+						<img class="zoom" id="salmon" src="images/salmon.png" alt="A pictogram of salmon">
+						<h5 class="orangeRed">Salmon</h5>
+					</div>
+					<div class="quarter central">
+						<img class="zoom" id="avocado" src="images/avocado.png" alt="A pictogram of avocado">
+						<h5 class="orangeRed">Avocado</h5>
+					</div>
+				</div>
+			</section>
+			<section class="results">
+				<div class="mainRecipe bordered">
+					<h2 id="recipeName1">
+						<!--RECIPE TITLE-->
+					</h2>
+					<div class="flexor flexor-MINI">
+						<div class="third">
+							<img id="recipeImg1" src="">
+						</div>
+						<div class="twoThirds">
+							<h4>Ingredients</h4>
+							<ol id="recipeIngredients">
+								<!--INGREDIENT LIST-->
+							</ol>
+						</div>
+					</div>
+					<div>
+						<h4>Steps</h4>
+						<ol id="recipeSteps">
+							<!--RECIPE STEPS-->
+						</ol>
+					</div>
+				</div>
+				<div class="extraRecipe flexor">
+					<div class="quarter central">
+						<img class="recipe2 zoom" id="" src="" alt="recipe img">
+						<span class="orangeRed" id="recipeTitle2"></span>
+					</div>
+					<div class="quarter central">
+						<img class="recipe3 zoom" id="" src="" alt="recipe img">
+						<span class="orangeRed" id="recipeTitle3"><!--Recipe titie--></span>
+					</div>
+					<div class="quarter central hiddenRecipe">
+						<img class="recipe4 zoom" id="" src="" alt="recipe img">
+						<span class="orangeRed" id="recipeTitle4"></span>
+					</div>
+					<div class="quarter central hiddenRecipe">
+						<img class="recipe5 zoom" id="" src="" alt="recipe img">
+						<span class="orangeRed" id="recipeTitle5"></span>
+					</div>
+				</div>
+			</section>
+			<section class="delicious" id="deliciosoBlock">
+				<h2> Delicious recipes</h2>
+				<div class="slideContainer">
+					<div class="mySlides fade">
+						<a target="_blank" href="https://www.ontario.ca/foodland/recipes/cajun-parsnip-fries">
+							<img class="slideImage" src="images/cajun-fries.jpg" alt="A plate of Cajun fries">
+						</a>
+						<div class="text">
+							<h3> CAJUN PARSNIP FRIES </h3>
+							<span> Spice up this mild-flavoured vegetable with a new take on fries. For spicier fries, add a pinch of cayenne pepper to the seasoning blend. </span>
+							<span> 25 MINUTES </span>
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<a target="_blank" href="https://damndelicious.net/2023/03/31/garlic-rosemary-lamb-chops/">
+							<img class="slideImage" src="images/garlic-chops.jpg" alt="A plate of pork chops">
+						</a>
+						<div class="text">
+							<h3> GARLIC ROSEMARY LAMB CHOPS </h3>	
+							<span>Pan-seared until perfectly golden brown with an amazing garlicky, rosemary-thyme marinade. So easy yet so good!</span>
+							<span> 2 HOURS 35 MINUTES </span>
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<a target="_blank" href="https://www.thespruceeats.com/panko-crusted-baked-haddock-3057297">
+							<img class="slideImage" src="images/backed-haddock.jpg" alt="A plate of Cajun fries">
+						</a>
+						<div class="text">
+							<h3> PANKO-CRUSTED BAKED HADDOCK </h3>
+							<span> If you love fried fish but you'd rather not have to deal with the oil and hassle of frying, this delicious baked haddock with a crispy panko crust is the recipe for you. </span>
+							<span> 37 MINUTES </span>
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<a target="_blank" href="https://damndelicious.net/2023/02/13/roasted-sweet-potatoes/">
+							<img class="slideImage" src="images/sweet-potatoes.jpg" alt="A plate of Cajun fries">
+						</a>
+						<div class="text">
+							<h3> ROASTED SWEET POTATOES </h3>
+							<span>Amazingly crisp-tender sweet potatoes roasted to perfection. Such a quick, easy, vegetarian side dish for any meal!</span>
+							<span> 50 MINUTES </span>
+						</div>
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                	<a class="next" onclick="plusSlides(1)">&#10095</a>
+				</div>
+			</section>
+			<section class="news" id="newsBlock">
+				<h2>From Around the World</h2>
+				<div class="flexor bordered">
+					<div class="third">
+						<img src="images/filipino-month.jpg" alt="">
+					</div>
+					<div class="twoThirds relPos">
+						<a target="_blank" class="absTop" target="_blank" href="https://www.cbc.ca/news/canada/kitchener-waterloo/andrew-coppolino-filipino-restaurant-month-2023-1.6803625">
+							<h5>Filipino Restaurant Month celebrates cuisine and culture in local community</h5>
+						</a>
+						<div class="absBottom">
+							<span>Filipino Restaurant Month</span>
+							<span>CBC News</span>
+						</div>
+					</div>
+				</div>
+				<div class="flexor bordered">
+					<div class="third">
+						<img src="images/top-cuisines.jpg" alt="">
+					</div>
+					<div class="twoThirds relPos">
+						<a target="_blank" class="absTop" target="_blank" href="https://www.chefspencil.com/most-popular-cuisines-on-instagram-and-tiktok/">
+							<h5>The Most Popular International Cuisines on Instagram and TikTok in 2023</h5>
+						</a>
+						<div class="absBottom">
+							<span>Food Trends</span>
+							<span>CHEF'S PENCIL</span>
+						</div>
+					</div>
+				</div>
+				<div class="flexor bordered">
+					<div class="third">
+						<img src="images/mediterranean.jpg" alt="">
+					</div>
+					<div class="twoThirds relPos">
+						<a target="_blank" class="absTop" target="_blank" href="https://studyfinds.org/best-mediterranean-cookbooks/">
+							<h5>Best Mediterranean Cookbooks: Top 5 Culinary Guides Most Recommended By Experts</h5>
+						</a>
+						<div class="absBottom">
+							<span>Best of The Best</span>
+							<span>Study Finds</span>
+						</div>
+					</div>
+				</div>
+				<div class="flexor bordered">
+					<div class="third">
+						<img src="images/carbonara.jpg" alt="">
+					</div>
+					<div class="twoThirds relPos">
+						<a target="_blank" class="absTop" target="_blank" href="https://www.euronews.com/culture/2023/03/31/where-was-carbonara-created-its-a-question-italians-dont-want-to-hear-the-answer-to">
+							<h5>Where was Carbonara created? It's a question Italians don't want to hear the answer to</h5>
+						</a>
+						<div class="absBottom">
+							<span>Culture in Food</span>
+							<span>By Euronews</span>
+						</div>
+					</div>
+				</div>
+				<div class="flexor bordered">
+					<div class="third">
+						<img src="images/ramadan.jpg" alt="">
+					</div>
+					<div class="twoThirds relPos">
+						<a target="_blank" class="absTop" target="_blank" href="https://dohanews.co/flavours-beyond-borders-a-look-into-culinary-staples-in-ramadan/">
+							<h5>Flavours beyond borders: a look into culinary staples in Ramadan</h5>
+						</a>
+						<div class="absBottom">
+							<span>Culture in Food</span>
+							<span>Doha News</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="featured" id="featureBlock">
+				<h2>More Tasty Recipes to Try</h2>
+				<div class="flexor flexor-MINI">
+					<div class="third central">
+						<a target="_blank" href="https://tasty.co/recipe/taco-soup">
+							<h4>Taco Soup</h4>
+							<img class="zoom" src="images/taco-soup.jpg" alt="">
+						</a>
+						<span class="orangeRed">25 Minutes</span>
+						<span class="orangeRed"> 4.8 ★</span>
+					</div>
+					<div class="third central">
+						<a target="_blank" href="https://www.foodnetwork.com/recipes/photos/easy-dinner-recipes">
+							<h4>Cauliflower Stir-Fry</h4>
+							<img class="zoom" src="images/cauliflower-fry.jpg" alt="">
+						</a>
+						<span class="orangeRed">30 Minutes</span>
+						<span class="orangeRed"> 5.0 ★</span>
+					</div>
+					<div class="third central">
+						<a target="_blank" href="https://www.aheadofthyme.com/pesto-penne-pasta/">
+							<h4>Pesto Penne Pasta</h4>
+							<img class="zoom" src="images/pesto-pasta.jpg" alt="">
+						</a>
+						<span class="orangeRed">15 Minutes</span>
+						<span class="orangeRed"> 5.0 ★</span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="third central">
+				<div>
+					<h3> ANTRANNA RECIPES</h3>
+				</div>
+				<div class="flexor socials">
+					<a class="third"><img class="logo" src="images/facebook.png" alt="Facebook Logo"></a>
+					<a class="third"><img class="logo" src="images/instagram.png" alt="Instagram Logo"></a>
+					<a class="third"><img class="logo" src="images/twitter.png" alt="Twitter Logo"></a>
+				</div>
+			</div>
+			<div class="quarter">
+				<nav>
+					<ul>
+						<li><a href="#topBlock">Home</a></li>
+						<li><a href="#exploreBlock">Explore</a></li>
+						<li class="spotlightAnchor"><a href="#deliciosoBlock">Spotlight</a></li>
+						<li><a href="#newsBlock">News</a></li>
+						<li><a href="#featureBlock">Easy Recipes</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="third newsletter">
+				<h3>Sign up for our Email Newsletter</h3>
+				<div>
+					<input type="text" placeholder="Email address">
+					<input class="btn" type="button" value="Join">
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
