@@ -18,6 +18,6 @@
 </div>
 <div>
   <h2>Lessons Learned:</h2>
-  <p><strong>Analyzing API documentation</strong> - In my search for the most suitable API, I came across different interfaces and documentation that challenged me to better my ability to review and understand their specific capabilities, limitations, and requirements.</p>&nbsp;
+  <p><strong>Analyzing API documentation</strong> - In my search for the most suitable API, I came across different interfaces and documentation that challenged me to improve my ability to review and understand their specific capabilities, limitations, and requirements.</p>&nbsp;
   <p><strong>Data parsing and manipulation</strong> - Conversion of the returned JSON file, in conjunction with the retrieval of specific data/information from the Javascript, provided an opportunity to continue sharpening my expertise in manipulating data.</p>&nbsp;
 </div>
